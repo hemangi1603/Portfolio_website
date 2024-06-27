@@ -179,8 +179,6 @@ button {
 					  const typingTexts = [
 						'M.Sc.IT(CA & IT) Student',
 					  ];
-	  
-					  // Create a function to display the typing animation for a given text
 					  function playTypingAnimation(text) 
 					  {
 						for (let i = 0; i < text.length; i++) 
@@ -190,8 +188,6 @@ button {
 							typingAnimationElement.textContent += text[i];
 						  }, i * 200); // Increase the delay to slow down the typing animation
 						}
-	  
-						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 						  typingAnimationElement.textContent = '';
 						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
@@ -242,8 +238,7 @@ button {
 					
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
+							<div class="col-md-12 heading-section ftco-animate">					
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								<p>Driven by curiosity and a passion for technology, I am an IT student with a deep interest in web development and software engineering. My academic journey has equipped me with a solid foundation and practical experience in creating innovative digital solutions. I thrive on challenges and enjoy transforming complex problems into seamless user experiences. Outside the classroom, I love exploring new tech trends, participating in hackathons, and collaborating on exciting projects. My goal is to leverage my skills to make a meaningful impact in the tech world and continually push the boundaries of what’s possible.</p>
@@ -508,10 +503,10 @@ button {
 				</div>
 				<div class="underline"></div><br>
 				<div class="blog-entry d-flex mb-4">
-				  <a href="" class="block-20 zoom-effect" style="background-image: url('images/01-preview.__large_preview.jpg'); width: 40%; height: 200px; background-size: cover;"></a>
+				  <a href="https://github.com/hemangi1603/CognoRise-Infotech-Task1/tree/master" class="block-20 zoom-effect" style="background-image: url('images/01-preview.__large_preview.jpg'); width: 40%; height: 200px; background-size: cover;"></a>
 				  <div class="text mt-3 ml-3">
 					<h5 class="heading">
-					  <a href="">Description:</a>
+					  <a href="https://github.com/hemangi1603/CognoRise-Infotech-Task1/tree/master">Description:</a>
 					</h5>
 					<p>My Portfolio</p>
 					<p>Role: Lead Developer</p>
@@ -527,18 +522,6 @@ button {
 		  </div>
 		</div>
 	  </section>
-	  
-	  
-
-
-
-
-
-
-
-
-
-
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
@@ -567,19 +550,10 @@ button {
               </div>
             </div>
           </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
 	
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/dark-black-background-design-with-stripes_1017-38064.avif)">
-			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>View projects on<span> Github  </span> </h2>
@@ -589,11 +563,8 @@ button {
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
 		</div>
 	</section>
-
-
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -630,7 +601,7 @@ button {
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">hemangi.solanki2003@gmail.com</a></p>
+	            <p><a href="hemangi.solanki2003@gmail.com">hemangi.solanki2003@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -715,12 +686,6 @@ button {
 	// Function to handle form submission
 	document.getElementById("submit-to-google-sheet").addEventListener("submit", function(event) {
 		event.preventDefault(); // Prevent default form submission
-		
-		// Simulated form submission to Google Sheets or any backend
-		// Here you can add your actual submission logic
-		// For demonstration, we'll just show the success message
-
-		// Display success message
 		document.getElementById("success-message").style.display = "block";
 	});
 </script>
